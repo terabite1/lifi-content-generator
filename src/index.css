@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lifi-gradient {
+  background: linear-gradient(135deg, #5C67FF 0%, #a78bfa 50%, #F7C2FF 100%);
+}
+
+.lifi-gradient-text {
+  background: linear-gradient(135deg, #5C67FF 0%, #8B5CF6 50%, #F7C2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lifi-gradient-btn {
+  background: linear-gradient(135deg, #5C67FF 0%, #7C6BF0 100%);
+}
+
+.lifi-gradient-btn:hover {
+  background: linear-gradient(135deg, #4B54F0 0%, #6B5AE0 100%);
+}
+
+.lifi-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 0% 0%, rgba(92, 103, 255, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(247, 194, 255, 0.06) 0%, transparent 70%),
+    #f9fafb;
+}

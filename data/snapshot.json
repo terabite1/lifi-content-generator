@@ -1,0 +1,178 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-21T00:00:00Z",
+    "period": "last_30_days",
+    "queries_source": "data/queries.sql"
+  },
+
+  "platform_kpis": {
+    "volume_usd_30d": 2793285710.45,
+    "volume_usd_prior_30d": 2714585924.43,
+    "volume_usd_growth_pct": 2.9,
+    "volume_usd_all_time": 73726818112.87,
+    "tx_count_30d": 2627080,
+    "tx_count_prior_30d": 3451439,
+    "tx_count_growth_pct": -23.9,
+    "tx_count_all_time": 88917375
+  },
+
+  "monthly_growth": [
+    { "month": "2025-10", "volume_usd": 8026583440.43, "tx_count": 8047414, "active_users": 1038296, "new_users": 543168 },
+    { "month": "2025-11", "volume_usd": 5043371137.71, "tx_count": 4154074, "active_users": 749979,  "new_users": 301622 },
+    { "month": "2025-12", "volume_usd": 3958298517.28, "tx_count": 5044290, "active_users": 626464,  "new_users": 269541 },
+    { "month": "2026-01", "volume_usd": 3367626176.95, "tx_count": 3221607, "active_users": 763359,  "new_users": 341030 },
+    { "month": "2026-02", "volume_usd": 3220027250.04, "tx_count": 2340924, "active_users": 559535,  "new_users": 231278 },
+    { "month": "2026-03", "volume_usd": 2275798035.52, "tx_count": 2342971, "active_users": 548076,  "new_users": 205422 },
+    { "month": "2026-04", "volume_usd": 1728391144.27, "tx_count": 1217631, "active_users": 317692,  "new_users": 109308 }
+  ],
+
+  "top_chains": [
+    { "sending_chain": "Ethereum",   "receiving_chain": "Arbitrum", "volume_usd": 157061430.05, "tx_count": 20879 },
+    { "sending_chain": "Ethereum",   "receiving_chain": "Polygon",  "volume_usd": 147831899.80, "tx_count": 5046  },
+    { "sending_chain": "Arbitrum",   "receiving_chain": "Ethereum", "volume_usd": 131207336.15, "tx_count": 14726 },
+    { "sending_chain": "Base",       "receiving_chain": "Ethereum", "volume_usd": 43941246.59,  "tx_count": 21328 },
+    { "sending_chain": "Ethereum",   "receiving_chain": "Base",     "volume_usd": 41632141.94,  "tx_count": 17781 },
+    { "sending_chain": "Avalanche",  "receiving_chain": "Ethereum", "volume_usd": 32893985.26,  "tx_count": 1646  },
+    { "sending_chain": "BSC",        "receiving_chain": "Ethereum", "volume_usd": 31303444.99,  "tx_count": 16603 },
+    { "sending_chain": "Ethereum",   "receiving_chain": "Plasma",   "volume_usd": 23425316.32,  "tx_count": 342   },
+    { "sending_chain": "Base",       "receiving_chain": "Arbitrum", "volume_usd": 22862860.34,  "tx_count": 18907 },
+    { "sending_chain": "Ethereum",   "receiving_chain": "BSC",      "volume_usd": 22666941.72,  "tx_count": 9784  }
+  ],
+
+  "top_tokens": [
+    { "token_pair": "USDC-USDC",   "volume_usd": 555623430.04, "tx_count": 108680 },
+    { "token_pair": "USDC-USDT",   "volume_usd": 154535565.83, "tx_count": 21503  },
+    { "token_pair": "USDT-USDC",   "volume_usd": 152113178.73, "tx_count": 20895  },
+    { "token_pair": "USDT0-USDC",  "volume_usd": 78276715.68,  "tx_count": 7964   },
+    { "token_pair": "USDT-USDT",   "volume_usd": 66440865.44,  "tx_count": 11762  },
+    { "token_pair": "ETH-ETH",     "volume_usd": 62142963.23,  "tx_count": 127598 },
+    { "token_pair": "WLFI-USDT",   "volume_usd": 51797981.42,  "tx_count": 45     },
+    { "token_pair": "USDC-USDT0",  "volume_usd": 48211553.87,  "tx_count": 3852   },
+    { "token_pair": "ETH-USDC",    "volume_usd": 46512118.59,  "tx_count": 89759  },
+    { "token_pair": "USDT-USDT0",  "volume_usd": 46069186.68,  "tx_count": 2452   }
+  ],
+
+  "revenue": {
+    "lifi_revenue_30d": 279682.24,
+    "lifi_revenue_prior_30d": 225095.53,
+    "lifi_revenue_growth_pct": 24.2,
+    "integrator_fees_30d": 1386474.95,
+    "lifi_revenue_all_time": 5081864.71
+  },
+
+  "top_integrators": [
+    {
+      "integrator": "_binancewallet",
+      "total_volume_usd": 3.854e19,
+      "tx_count": 545966,
+      "chain_count": 16,
+      "tool_count": 6,
+      "chains_used": ["Metis","Base","BSC","Plasma","Sui","Ethereum","Avalanche","Monad","Sonic","Katana","Scroll","Mantle","Arbitrum","Mode","Solana","Linea"]
+    },
+    {
+      "integrator": "bcdc",
+      "total_volume_usd": 178298617730.44,
+      "tx_count": 3073,
+      "chain_count": 7,
+      "tool_count": 12,
+      "chains_used": ["Arbitrum","Base","BSC","Solana","Polygon","Optimism","Ethereum"]
+    },
+    {
+      "integrator": "cdcdefi",
+      "total_volume_usd": 1904957025.56,
+      "tx_count": 12276,
+      "chain_count": 19,
+      "tool_count": 16,
+      "chains_used": ["Solana","Unichain","Sonic","Arbitrum","Avalanche","Ethereum","Monad","Polygon","Base","Sui","Blast","zkSync","Optimism","Berachain","Kaia","BSC","Cronos","HyperEVM","Plasma"]
+    },
+    {
+      "integrator": "base-app",
+      "total_volume_usd": 158933234.35,
+      "tx_count": 97912,
+      "chain_count": 7,
+      "tool_count": 9,
+      "chains_used": ["Base","Avalanche","Optimism","Ethereum","BSC","Arbitrum","Polygon"]
+    },
+    {
+      "integrator": "Ethena",
+      "total_volume_usd": 63164922.35,
+      "tx_count": 849,
+      "chain_count": 10,
+      "tool_count": 10,
+      "chains_used": ["Base","Ethereum","HyperEVM","Arbitrum","Mantle","BSC","Plasma","Fraxtal","Avalanche","Berachain"]
+    },
+    {
+      "integrator": "Cow",
+      "total_volume_usd": 54790179.94,
+      "tx_count": 11577,
+      "chain_count": 7,
+      "tool_count": 18,
+      "chains_used": ["Base","Solana","Ethereum","Arbitrum","Bitcoin","BSC","HyperEVM"]
+    },
+    {
+      "integrator": "robinhood-fees-enabled",
+      "total_volume_usd": 51663442.83,
+      "tx_count": 11522,
+      "chain_count": 7,
+      "tool_count": 12,
+      "chains_used": ["Solana","Arbitrum","Base","BSC","Ethereum","Optimism","Polygon"]
+    },
+    {
+      "integrator": "hyperliquid",
+      "total_volume_usd": 50622228.69,
+      "tx_count": 2773,
+      "chain_count": 1,
+      "tool_count": 8,
+      "chains_used": ["Arbitrum"]
+    },
+    {
+      "integrator": "_arbitrum",
+      "total_volume_usd": 49298013.41,
+      "tx_count": 3786,
+      "chain_count": 6,
+      "tool_count": 16,
+      "chains_used": ["ApeChain","Superposition","Solana","Arbitrum","Base","Ethereum"]
+    }
+  ],
+
+  "chain_count": {
+    "active_sending_chains": 67,
+    "active_receiving_chains": 67,
+    "total_unique_chains": 67
+  },
+
+  "unique_wallets": {
+    "total_wallets_all_time": 8055292,
+    "new_wallets_30d": 165085,
+    "median_wallet_tx_count": 2
+  },
+
+  "quality_metrics": {
+    "positive_slippage_total": 344800,
+    "total_tx": 1821733,
+    "positive_slippage_rate": 0.189
+  },
+
+  "cross_chain_vs_same_chain": {
+    "cross_chain": { "volume_usd": 1150308926.97, "tx_count": 619941  },
+    "same_chain":  { "volume_usd": 1642976783.48, "tx_count": 2007139 }
+  },
+
+  "tool_breakdown": [
+    { "tool": "fly-dex",          "volume_usd": 325322390.81, "tx_count": 689890 },
+    { "tool": "sushiswap",        "volume_usd": 98226094.36,  "tx_count": 441406 },
+    { "tool": "kyberswap",        "volume_usd": 414945144.78, "tx_count": 268715 },
+    { "tool": "fly",              "volume_usd": 305473984.55, "tx_count": 230962 },
+    { "tool": "nordstern",        "volume_usd": 59973336.31,  "tx_count": 135106 },
+    { "tool": "gasZipBridge",     "volume_usd": 6781725.99,   "tx_count": 127537 },
+    { "tool": "across",           "volume_usd": 92821029.07,  "tx_count": 112102 },
+    { "tool": "relaydepository",  "volume_usd": 148767949.63, "tx_count": 111451 },
+    { "tool": "jupiter",          "volume_usd": 19187760.30,  "tx_count": 91861  },
+    { "tool": "near",             "volume_usd": 72807988.57,  "tx_count": 64435  }
+  ],
+
+  "jumper_vs_api": {
+    "jumper": { "volume_usd": 1183924699.62, "tx_count": 426008,  "integrator_count": 9    },
+    "api":    { "volume_usd": 1609361010.83, "tx_count": 2201072, "integrator_count": 1018 }
+  }
+}

@@ -1,0 +1,26 @@
+Analyze this LI.FI protocol data snapshot and generate exactly 8 key insights for LinkedIn content creation.
+
+Data:
+{paste snapshot.json here}
+
+Return a JSON array where each insight has these exact fields:
+- "id": unique kebab-case string
+- "title": short compelling title (under 60 chars)
+- "description": 2-3 sentence analysis of what this data means and why it matters
+- "category": one of "growth", "volume", "revenue", "adoption", "technical", "ecosystem"
+- "metric": the key metric value as a formatted string (e.g., "$2.79B", "8M+", "67 chains")
+- "trend": "up", "down", or "neutral"
+- "trendValue": change description (e.g., "+2.9%", "-23.9%", "Stable")
+- "dataPoints": array of 2-4 supporting data strings
+
+Focus on:
+1. Volume and transaction trends
+2. Revenue growth
+3. User/wallet adoption
+4. Cross-chain vs same-chain dynamics
+5. Top integrator partnerships
+6. Chain ecosystem breadth
+7. Quality metrics and execution
+8. Product channel distribution (Jumper vs API)
+
+Return ONLY the JSON array, no other text.

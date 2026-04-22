@@ -1,0 +1,122 @@
+[
+  {
+    "id": "volume-resilience-amid-tx-decline",
+    "title": "Volume Holds Steady as Transaction Mix Shifts Upmarket",
+    "description": "LI.FI processed $2.79B in volume over the last 30 days, up 2.9% versus the prior period, even as transaction count fell 23.9%. The divergence signals a shift toward larger average ticket sizes — fewer, higher-value flows — suggesting growing institutional and power-user activity on the protocol.",
+    "category": "volume",
+    "metric": "$2.79B",
+    "trend": "up",
+    "trendValue": "+2.9% volume / -23.9% tx",
+    "dataPoints": [
+      "30d volume: $2.79B vs prior $2.71B",
+      "30d transactions: 2.63M vs prior 3.45M",
+      "All-time volume: $73.7B",
+      "Implied avg tx size up ~35% MoM"
+    ]
+  },
+  {
+    "id": "revenue-outpacing-volume",
+    "title": "LI.FI Revenue Up 24% — Outpacing Volume Growth 8x",
+    "description": "Protocol revenue reached $279.7K in the last 30 days, a 24.2% jump that dramatically outpaces the 2.9% volume growth. Combined with $1.39M in integrator fees, this points to improving monetization per dollar routed and a healthier take-rate as the integrator economy matures.",
+    "category": "revenue",
+    "metric": "$279.7K",
+    "trend": "up",
+    "trendValue": "+24.2%",
+    "dataPoints": [
+      "LI.FI revenue 30d: $279,682",
+      "Integrator fees 30d: $1.39M",
+      "Revenue grew 8x faster than volume",
+      "All-time LI.FI revenue: $5.08M"
+    ]
+  },
+  {
+    "id": "wallet-base-crosses-8m",
+    "title": "8M+ Wallets Now Routed Through LI.FI",
+    "description": "The protocol surpassed 8.05M unique wallets all-time, with 165K net new wallets onboarded in the last 30 days alone. With a median of 2 transactions per wallet, LI.FI is functioning as core cross-chain infrastructure for a broad long-tail of users — not just a power-user tool.",
+    "category": "adoption",
+    "metric": "8.05M wallets",
+    "trend": "up",
+    "trendValue": "+165K in 30d",
+    "dataPoints": [
+      "Total wallets all-time: 8,055,292",
+      "New wallets last 30d: 165,085",
+      "Median tx per wallet: 2",
+      "All-time tx count: 88.9M"
+    ]
+  },
+  {
+    "id": "cross-chain-share-41-percent",
+    "title": "Cross-Chain Captures 41% of Volume on 24% of Transactions",
+    "description": "Same-chain swaps drove $1.64B across 2.0M transactions, while cross-chain delivered $1.15B in just 620K transactions. Cross-chain flows are roughly 6x larger per transaction on average — confirming bridging remains the high-value lane while same-chain swap routing handles everyday user activity.",
+    "category": "technical",
+    "metric": "41% cross-chain",
+    "trend": "neutral",
+    "trendValue": "Mixed-mode",
+    "dataPoints": [
+      "Cross-chain: $1.15B / 619,941 tx",
+      "Same-chain: $1.64B / 2,007,139 tx",
+      "Cross-chain avg tx ~$1,855",
+      "Same-chain avg tx ~$819"
+    ]
+  },
+  {
+    "id": "binance-wallet-anchor-integrator",
+    "title": "Binance Wallet Emerges as Largest Distribution Partner",
+    "description": "Binance Wallet leads integrator activity with 545K transactions across 16 chains, demonstrating LI.FI's role as the routing layer behind major exchange wallets. Combined with base-app (97K tx, 7 chains) and Crypto.com DeFi (12K tx, 19 chains), exchange-affiliated wallets are now the largest demand channel.",
+    "category": "ecosystem",
+    "metric": "545K tx",
+    "trend": "up",
+    "trendValue": "Top integrator",
+    "dataPoints": [
+      "Binance Wallet: 545,966 tx, 16 chains",
+      "base-app: 97,912 tx, 7 chains",
+      "cdcdefi: 12,276 tx, 19 chains",
+      "Robinhood live with fees enabled"
+    ]
+  },
+  {
+    "id": "67-chain-coverage",
+    "title": "67-Chain Coverage Cements Routing Layer Position",
+    "description": "LI.FI now actively routes across 67 unique chains as both source and destination, with Ethereum-Arbitrum the dominant corridor at $157M. Newer entrants like Plasma, Monad, Katana, and HyperEVM appear in integrator chain lists, showing the protocol is integrating new ecosystems as they launch.",
+    "category": "ecosystem",
+    "metric": "67 chains",
+    "trend": "up",
+    "trendValue": "Expanding",
+    "dataPoints": [
+      "67 active sending and receiving chains",
+      "Top corridor: ETH→Arbitrum at $157M",
+      "ETH→Polygon: $147.8M",
+      "Emerging chains: Plasma, Monad, Katana, HyperEVM"
+    ]
+  },
+  {
+    "id": "execution-quality-positive-slippage",
+    "title": "18.9% of Trades Settle With Positive Slippage",
+    "description": "Of 1.82M transactions analyzed, 344.8K (18.9%) executed at better-than-quoted prices. This positive slippage rate is a meaningful execution-quality signal: nearly 1 in 5 routes returns more value than promised at quote time, validating the multi-solver routing approach across DEXs and bridges.",
+    "category": "technical",
+    "metric": "18.9%",
+    "trend": "up",
+    "trendValue": "Positive slippage",
+    "dataPoints": [
+      "Positive slippage events: 344,800",
+      "Total tx analyzed: 1,821,733",
+      "Top tools: kyberswap ($415M), fly-dex ($325M), fly ($305M)",
+      "10+ active routing tools in the mix"
+    ]
+  },
+  {
+    "id": "api-vs-jumper-distribution",
+    "title": "API Channel Now Drives 58% of Volume Across 1,018 Integrators",
+    "description": "The LI.FI API delivered $1.61B across 1,018 distinct integrators, while Jumper (the consumer front-end) handled $1.18B from just 9 integrators. The split shows LI.FI has successfully transitioned from an app-led to an infrastructure-led business — with the API's long tail now the larger and more diversified channel.",
+    "category": "growth",
+    "metric": "1,018 integrators",
+    "trend": "up",
+    "trendValue": "API-led",
+    "dataPoints": [
+      "API: $1.61B / 2.20M tx / 1,018 integrators",
+      "Jumper: $1.18B / 426K tx / 9 integrators",
+      "API share of volume: ~58%",
+      "API share of tx: ~84%"
+    ]
+  }
+]
