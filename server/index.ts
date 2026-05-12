@@ -3,10 +3,30 @@ import Anthropic from '@anthropic-ai/sdk'
 import { readFileSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import 'dotenv/config'
+import dotenv from 'dotenv'
+dotenv.config({ override: true })
 
 const app = express()
 app.use(express.json())
+
+// Password gate: if APP_PASSWORD is set, require HTTP Basic Auth on every request.
+// Username field is ignored; only password is checked.
+const APP_PASSWORD = process.env.APP_PASSWORD
+if (APP_PASSWORD) {
+  app.use((req, res, next) => {
+    const auth = req.headers.authorization || ''
+    if (auth.startsWith('Basic ')) {
+      const decoded = Buffer.from(auth.slice(6), 'base64').toString()
+      const password = decoded.split(':').slice(1).join(':')
+      if (password === APP_PASSWORD) return next()
+    }
+    res.set('WWW-Authenticate', 'Basic realm="Marketing Tool"')
+    res.status(401).send('Authentication required')
+  })
+  console.log('Password protection: ENABLED')
+} else {
+  console.log('Password protection: DISABLED (set APP_PASSWORD to enable)')
+}
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
@@ -377,7 +397,18 @@ app.get('/api/examples', (_req, res) => {
   }
 })
 
-const PORT = process.env.API_PORT || 3001
+// In production (after `npm run build`), serve the built frontend from the same server.
+// In dev, Vite handles the frontend on its own port.
+if (process.env.NODE_ENV === 'production') {
+  const distPath = join(__dirname, '..', 'dist')
+  app.use(express.static(distPath))
+  app.get('*', (_req, res) => {
+    res.sendFile(join(distPath, 'index.html'))
+  })
+}
+
+// Render and most hosts inject PORT. Locally we default to 3001.
+const PORT = process.env.PORT || process.env.API_PORT || 3001
 app.listen(PORT, () => {
   console.log(`API server running on http://localhost:${PORT}`)
 })
